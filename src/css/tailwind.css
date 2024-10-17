@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Poppins", sans-serif, system-ui;
+  }
+
+  @font-face {
+    font-family: "Urbanist";
+    font-weight: 100 900;
+    font-display: swap;
+    src: url("../assets/font/Urbanist-VariableFont_wght.woff2") format("woff2-variations"),
+         url("../assets/font/Urbanist-VariableFont_wght.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Caviar Dreams";
+    font-weight: 700;
+    font-display: swap;
+    src: url("../assets/font/CaviarDreams-Bold.woff2") format('woff2'),
+         url("../assets/font/CaviarDreams_Bold.ttf") format('truetype');
+  }
+}
+
+@layer components {
+  .hero-index {
+    background-image: linear-gradient(#49494980, #49494980),
+                      image-set(
+                        url("../assets/img/background-one.avif") type("image/avif"),
+                        url("../assets/img/background-one.webp")
+                      );
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .hero-index-md {
+    background-image: image-set(
+                        url("../assets/img/person-hero.avif") type("image/avif"),
+                        url("../assets/img/person-hero.webp")
+                      ),
+                      linear-gradient(#49494980, #49494980),
+                      image-set(
+                        url("../assets/img/background-one.avif") type("image/avif"),
+                        url("../assets/img/background-one.webp")
+                      );
+    background-size: 700px, cover, cover;
+    background-position: bottom right -200px, center, center;
+    background-attachment: scroll, fixed, fixed;
+  }
+
+  .hero-index-lg {
+    background-image: image-set(
+                        url("../assets/img/person-hero.avif") type("image/avif"),
+                        url("../assets/img/person-hero.webp")
+                      ),
+                      linear-gradient(#49494980, #49494980),
+                      image-set(
+                        url("../assets/img/background-one.avif") type("image/avif"),
+                        url("../assets/img/background-one.webp")
+                      );
+    background-size: 800px, cover, cover;
+    background-position: bottom right -225px, center, center;
+    background-attachment: scroll, fixed, fixed;
+  }
+
+  .hero-index-xl {
+    background-image: image-set(
+                        url("../assets/img/person-hero.avif") type("image/avif"),
+                        url("../assets/img/person-hero.webp")
+                      ),
+                      linear-gradient(#49494980, #49494980),
+                      image-set(
+                        url("../assets/img/background-one.avif") type("image/avif"),
+                        url("../assets/img/background-one.webp")
+                      );
+    background-size: 900px, cover, cover;
+    background-position: bottom right -250px, center, center;
+    background-attachment: scroll, fixed, fixed;
+  }
+
+  .wrapper {
+    @apply w-[90%] max-w-[75rem] mx-auto;
+  }
+
+  .btn-primary {
+    @apply block max-w-max bg-primary text-white text-center font-semibold py-3 px-6 rounded-lg border-solid border border-primary;
+  }
+
+  .btn-secondary {
+    @apply block max-w-max text-white text-center font-semibold py-3 px-6 rounded-lg border-solid border border-white;
+  }
+
+  .btn-tertiary {
+    @apply block max-w-max bg-secondary text-primary text-center font-semibold py-3 px-6 rounded-3xl border-solid border border-secondary;
+  }
+
+  .btn-destinations {
+    @apply block max-w-max text-primary text-center font-semibold py-3 px-6 rounded-3xl border-solid border border-primary hover:bg-primary/20;
+  }
+
+  .btn-destinations-clicked {
+    @apply block max-w-max bg-primary text-white text-center font-semibold py-3 px-6 rounded-3xl border-solid border border-primary hover:bg-primary;
+  }
+
+  .search-date::-webkit-calendar-picker-indicator {
+    @apply absolute left-0 top-1/2 -translate-y-1/2 z-10 text-primary opacity-0;
+  }
+
+  .title {
+    @apply text-tertiary text-2xl font-bold mb-8 before:h-1 before:bg-primary before:w-16 before:block before:mb-3 md:lg:text-3xl;
+  }
+
+  .footer-area {
+    grid-template-areas: "info      info"
+                         "contacto  contacto"
+                         "menu      redes"
+                         "iconos    iconos";
+  }
+
+  .footer-area-md {
+    grid-template-areas: "info      redes"
+                         "menu      contacto"
+                         "iconos    iconos";
+  }
+
+  .footer-area-lg {
+    grid-template-areas: "info    menu    redes     contacto";
+  }
+}

@@ -11,6 +11,7 @@
   <link rel="preload" href="./src/assets/font/Urbanist-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./src/assets/font/CaviarDreams-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./src/assets/img/background-one.avif" as="image" type="image/avif">
+  <script src="./src/js/modal-whatsapp.js" defer></script>
   <meta name="description" content="Somos una agencia de viajes con los mejores destinos a tu alcance. Descubre nuestros paquetes, promociones y más. ¡No te pierdas la oportunidad de disfrutar de nuestros destinos turísticos!">
   <meta name="keywords" content="ecotours, turismo, viajes, ecoturismo, aventuras, agencia de viajes, paquetes de viajes, comprar viajes, comprar paquetes, destinos turisticos, paquetes, descubrir lugares turisticos, operadora de turismo, viajes turisticos">
   <meta name="robots" content="index, follow">
@@ -706,5 +707,43 @@
       <p class="text-center">Copyright &copy; EcoTours | Todos los derechos reservados</p>
     </div>
   </footer>
+
+  <!-- WHATSAPP -->
+  <div class="toggle-switch" title="WhatsApp de EcoTours">
+    <div id="whatsapp" class="toggle-button fixed z-10 right-4 bottom-4 flex justify-center items-center w-14 h-14 text-white bg-[#25d366] rounded-full cursor-pointer after:block after:absolute after:inset-0 after:-z-10 after:bg-inherit after:rounded-full after:animate-ping after:[animation-duration:1.5s] hover:after:animate-none md:w-16 md:h-16" onclick="toggleChat()">
+      <svg class="w-7 h-7 md:w-8 md:h-8" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/></svg>
+    </div>
+  </div>
+  <div id="chat-box" class="fixed bottom-20 right-4 z-10 hidden w-[90%] max-w-[23.75rem] bg-white rounded-2xl shadow-2xl overflow-hidden md:bottom-[5.5rem]">
+    <div class="relative py-6 px-4 text-white bg-[#008069]">
+      <button class="absolute top-4 right-4 text-[#cce6e1] cursor-pointer transition-colors hover:text-white" onclick="toggleChat()" title="Cerrar">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/></svg>
+      </button>
+      <div class="flex gap-4">
+        <div class="w-12 h-12 bg-[#f8f8f8] rounded-full aspect-square overflow-hidden">
+          <picture>
+            <source srcset="./src/assets/img/image-perfil-ecotours.avif" type="image/avif">
+            <img class="w-full h-full object-cover select-none pointer-events-none" src="./src/assets/img/image-perfil-ecotours.webp" alt="Foto de perfil de Ecotours en WhatsApp" loading="lazy">
+          </picture>
+        </div>
+        <div class="space-y-1">
+          <p class="font-bold">Asesor en Línea</p>
+          <span class="flex items-center gap-2 text-sm after:block after:w-2 after:h-2 after:bg-[#4ad504] after:rounded-full">Online</span>
+        </div>
+      </div>
+    </div>
+    <div id="chat-messages" class="flex flex-col gap-4 w-full max-h-[12.5rem] py-6 px-4 break-all bg-[#efe8e0] overflow-y-auto [scrollbar-width:none]">
+      <div class="relative z-10 flex flex-col gap-2 w-max max-w-full py-2 px-[.8rem] text-sm bg-white rounded-2xl rounded-tl-none before:block before:absolute before:-z-10 before:top-0 before:-left-[10px] before:w-4 before:h-4 before:[background-image:linear-gradient(45deg,_transparent_50%,_#ffffff_50%)]">
+        <span>Hola 👋</span>
+        <span class="font-bold">¿Necesitas ayuda?</span>
+      </div>
+    </div>
+    <div class="flex justify-between gap-[1ch] py-2 px-4">
+      <input id="chat-input" class="block grow [flex-shrink:2] w-full rounded-[5px] text-sm outline-none placeholder:text-sm placeholder:font-medium placeholder:text-[#c2c2c2]" type="text" placeholder="Escribe un mensaje">
+      <button onclick="sendMessage()" class="shrink-0 flex justify-center items-center w-10 h-10 text-white bg-[#25d366] outline-none rounded-full cursor-pointer" title="Enviar mensaje">
+        <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="m21.426 11.095-17-8A1 1 0 0 0 3.03 4.242l1.212 4.849L12 12l-7.758 2.909-1.212 4.849a.998.998 0 0 0 1.396 1.147l17-8a1 1 0 0 0 0-1.81z"></path></svg>
+      </button>
+    </div>
+  </div>
 </body>
 </html>

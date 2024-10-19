@@ -110,7 +110,7 @@
   }
 
   .title {
-    @apply text-tertiary text-2xl font-bold mb-8 before:h-1 before:bg-primary before:w-16 before:block before:mb-3 md:lg:text-3xl;
+    @apply text-tertiary text-2xl font-bold mb-8 before:h-1 before:bg-primary before:w-16 before:block before:mb-3 md:lg:text-3xl lg:before:w-[4.5rem];
   }
 
   .footer-area {

@@ -1022,6 +1022,10 @@ html {
   aspect-ratio: 720/791;
 }
 
+.aspect-\[180\/109\] {
+  aspect-ratio: 180/109;
+}
+
 .h-10 {
   height: 2.5rem;
 }

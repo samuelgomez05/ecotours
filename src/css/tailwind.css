@@ -129,4 +129,19 @@
   .footer-area-lg {
     grid-template-areas: "info    menu    redes     contacto";
   }
+
+  .bg-video {
+    background-image: image-set(
+                        url("../assets/img/image-seven.avif") type("image/avif"),
+                        url("../assets/img/image-seven.webp")
+                      );
+  }
+
+  .btn-pagination-events {
+    @apply border border-solid border-[#e8e8e8] p-3 w-10 h-10 flex items-center justify-center font-medium text-tertiary transition-colors hover:bg-[#efe8e0];
+  }
+
+  .btn-pagination-events-active {
+    @apply bg-[#efe8e0];
+  }
 }

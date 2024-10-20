@@ -18,8 +18,8 @@
   <meta name="googlebot" content="index, follow">
 </head>
 <body>
-  <!-- DATA -->
-  <nav class="bg-primary">
+   <!-- DATA -->
+   <nav class="bg-primary">
     <div class="wrapper flex justify-between items-center gap-8 text-white text-sm py-4 sm:max-h-[60px]">
       <p class="flex items-center gap-2">
         <svg class="shrink-0 w-5 h-5 text-secondary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 1a5 5 0 0 0-5 5v1h1a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a6 6 0 1 1 12 0v6a2.5 2.5 0 0 1-2.5 2.5H9.366a1 1 0 0 1-.866.5h-1a1 1 0 1 1 0-2h1a1 1 0 0 1 .866.5H11.5A1.5 1.5 0 0 0 13 12h-1a1 1 0 0 1-1-1V8a1 1 0 0 1 1-1h1V6a5 5 0 0 0-5-5"/></svg>
@@ -159,63 +159,96 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero-index -mt-24 bg-no-repeat md:hero-index-md lg:hero-index-lg xl:hero-index-xl">
-      <div class="wrapper flex flex-col justify-center gap-6 text-white py-36 md:py-40 lg:py-48">
-        <p class="font-CaviarDreams text-lg md:text-xl lg:text-2xl">¡Descubre tu próxima aventura!</p>
-        <h1 class="font-Urbanist text-5xl font-black text-balance mb-8 md:hidden">Los Mejores Destinos a tu alcance</h1>
-        <h1 class="font-Urbanist text-5xl font-black text-balance mb-8 hidden md:block lg:text-7xl">Los Mejores Destinos <br> a tu alcance</h1>
-        <div class="flex flex-wrap gap-y-6 gap-x-8">
-          <a class="btn-primary max-w-full flex-grow transition-all hover:shadow-lg hover:saturate-200 sm:max-w-max" href="">Descubre nuestros tours</a>
-          <a class=" btn-secondary max-w-full flex-grow transition-colors hover:bg-white/15 sm:max-w-max" href="">Arma tu viaje</a>
-        </div>
+    <section class="hero-index -mt-24 bg-no-repeat">
+      <div class="wrapper flex flex-col justify-center gap-6 text-white py-36 md:py-40 md:text-center">
+        <p class="font-CaviarDreams text-lg md:text-xl lg:text-2xl">Viajes únicos para explorar dentro y fuera del país</p>
+        <h1 class="font-Urbanist text-5xl font-black text-balance mb-8 lg:text-7xl">Descubre Bolivia y el Mundo</h1>
       </div>
     </section>
 
-    <!-- SEARCH -->
-    <form class="wrapper max-w-5xl bg-primary rounded-xl py-12 px-6 text-sm -mt-12 md:py-10">
-      <div class="mb-12 lg:flex lg:items-center lg:mb-8 lg:gap-8">
-        <h2 class="text-2xl font-bold text-white mb-8 lg:mb-0">Paquetes</h2>
-        <div class="flex flex-col gap-4 mb-12 md:flex-row md:flex-wrap md:justify-center lg:mb-0">
-          <label class="btn-secondary py-3 rounded-3xl max-w-full transition-colors cursor-pointer has-[:checked]:btn-tertiary has-[:checked]:border-secondary has-[:checked]:py-3 has-[:checked]:max-w-full has-[:not(:checked)]:hover:bg-white/15 md:flex-grow md:max-w-[50%]" for="radio-1">
-            <input id="radio-1" class="hidden" name="busqueda" type="radio" value="Turismo Interno y Emisivo" checked>
-            Turismo Interno y Emisivo
-          </label>
-          <label class="btn-secondary py-3 rounded-3xl max-w-full transition-colors cursor-pointer has-[:checked]:btn-tertiary has-[:checked]:border-secondary has-[:checked]:py-3 has-[:checked]:max-w-full has-[:not(:checked)]:hover:bg-white/15 md:flex-grow md:max-w-[50%]" for="radio-2">
-            <input id="radio-2" class="hidden" name="busqueda" type="radio" value="Turismo Receptivo">
-            Turismo Receptivo
-          </label>
-          <label class="btn-secondary py-3 rounded-3xl max-w-full transition-colors cursor-pointer has-[:checked]:btn-tertiary has-[:checked]:border-secondary has-[:checked]:py-3 has-[:checked]:max-w-full has-[:not(:checked)]:hover:bg-white/15 md:flex-grow md:max-w-[50%]" for="radio-3">
-            <input id="radio-3" class="hidden" name="busqueda" type="radio" value="Turismo Corporativo">
-            Turismo Corporativo
-          </label>
+    <!-- BENEFITS -->
+    <section class="flex flex-col gap-12 my-16 md:my-20 lg:my-32 lg:mt-20 md:wrapper md:items-center md:gap-16 lg:flex-row lg:justify-between lg:items-end">
+      <div class="wrapper md:w-full md:mx-0 lg:w-1/2 ">
+        <p class="mb-16 lg:mb-20">Inicio / Paquetes / <span class="text-primary font-semibold">Turismo Interno</span></p>
+        <h2 class="title">Viaja Sin Límites</h2>
+        <p class="text-pretty font-light mb-6 md:mb-8">Con Ecotours, podrás explorar paisajes únicos, culturas fascinantes y destinos sorprendentes, diseñados especialmente para viajeros que buscan lo mejor del turismo interno y emisivo.</p>
+        <div class="flex flex-wrap gap-8 items-center mb-8 md:mb-10 lg:flex-nowrap">
+          <button class="bg-video w-full basis-52 max-w-80 mx-auto grow aspect-video bg-center bg-no-repeat bg-cover rounded-lg relative group md:mx-0 lg:w-1/2">
+            <div class="absolute inset-0 flex justify-center items-center w-20 h-20 m-auto border-2 border-solid rounded-full transition-colors duration-300 border-secondary group-hover:border-transparent">
+              <div class="flex items-center justify-center w-[3.75rem] h-[3.75rem] rounded-full transition-transform bg-secondary duration-300 group-hover:scale-[1.25]">
+                <svg class="w-6 h-6 text-white" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"> <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" /></svg>
+              </div>
+            </div>
+          </button>
+          <ul class="space-y-4 lg:w-1/2">
+            <li class="flex items-center gap-3 font-light">
+              <svg class="text-primary w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/></svg>
+              Destinos Nacionales e Internacionales
+            </li>
+            <li class="flex items-center gap-3 font-light">
+              <svg class="text-primary w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/></svg>
+              Paquetes Personalizados
+            </li>
+            <li class="flex items-center gap-3 font-light">
+              <svg class="text-primary w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/></svg>
+              Asesoría de Viaje Experta
+            </li>
+            <li class="flex items-center gap-3 font-light">
+              <svg class="text-primary w-5 h-5 shrink-0" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/><path d="m10.97 4.97-.02.022-3.473 4.425-2.093-2.094a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05"/></svg>
+              Experiencias Culturales Únicas
+            </li>
+          </ul>
         </div>
+        <a class="btn-primary flex items-center gap-2 px-12 transition-all hover:saturate-200 hover:shadow-lg" href="">
+        Arma tu viaje
+        <svg class="w-[1.125rem] h-[1.125rem]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
+        </a>
+      </div>
+      <figure class="ml-auto w-[90%] aspect-[720/791] max-w-[28.125rem] md:ml-0 lg:w-1/2 lg:max-w-[31.25rem]">
+        <picture>
+          <source srcset="./src/assets/img/image-eight.avif" type="image/avif">
+          <img class="w-full h-full object-cover aspect-[720/791]" src="./src/assets/img/image-eight.webp" alt="Mujer viajera con mochila, sentada en una maleta y sonriendo, con un avión volando en el fondo">
+        </picture>
+      </figure>
+    </section>
+
+    <!-- SEARCH -->
+    <form class="wrapper max-w-5xl bg-primary rounded-xl py-12 px-6 text-sm md:py-10">
+      <div class="mb-12 lg:flex lg:items-center lg:mb-8 lg:gap-8">
+        <h2 class="text-2xl font-bold text-white mb-8 lg:mb-0">Calendario de Eventos</h2>
       </div>
       <div class="md:flex md:flex-wrap lg:flex-nowrap lg:gap-5 lg:items-center">
         <div class="w-full flex flex-col gap-5 md:flex-row md:flex-wrap md:justify-center">
           <div class="bg-white rounded-lg py-3 px-5 text-primary md:basis-60 md:flex-grow lg:basis-40">
-            <label class="block mb-2 font-semibold" for="destino">Destino</label>
-            <div class="relative p-4">
-              <svg class="absolute left-0 top-1/2 -translate-y-1/2 z-10 pointer-events-none" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
-              <input id="destino" class="pl-6 pr-4 absolute inset-0 w-full h-full placeholder:text-primary placeholder:italic" type="text" placeholder="Ingresa el lugar">
-            </div>
-          </div>
-          <div class="bg-white rounded-lg py-3 px-5 text-primary md:basis-60 md:flex-grow lg:basis-40">
-            <label class="block mb-2 font-semibold" for="fecha">Fecha</label>
+            <label class="block mb-2 font-semibold" for="mes">Mes</label>
             <div class="relative p-4">
               <svg class="absolute left-0 top-1/2 -translate-y-1/2 z-10" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/><path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg>
-              <input id="fecha" class="search-date pl-6 pr-4 absolute inset-0 w-full h-full italic bg-white" type="date">
+              <select id="mes" class="pl-6 pr-4 absolute inset-0 w-full h-full appearance-none italic bg-white">
+                <option value="" selected disabled>Seleccionar mes</option>
+                <option value="Enero">Enero</option>
+                <option value="Febrero">Febrero</option>
+                <option value="Marzo">Marzo</option>
+                <option value="Abril">Abril</option>
+                <option value="Mayo">Mayo</option>
+                <option value="Junio">Junio</option>
+                <option value="Julio">Julio</option>
+                <option value="Agosto">Agosto</option>
+                <option value="Septiembre">Septiembre</option>
+                <option value="Octubre">Octubre</option>
+                <option value="Noviembre">Noviembre</option>
+                <option value="Diciembre">Diciembre</option>
+              </select>
             </div>
           </div>
           <div class="bg-white rounded-lg py-3 px-5 text-primary md:max-w-[50%] md:basis-60 md:flex-grow lg:basis-40">
-            <label class="block mb-2 font-semibold" for="personas">Personas</label>
+            <label class="block mb-2 font-semibold" for="año">Año</label>
             <div class="relative p-4">
-              <svg class="absolute left-0 top-1/2 -translate-y-1/2 z-10" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"/></svg>
-              <select id="personas" class="pl-6 pr-4 absolute inset-0 w-full h-full appearance-none italic bg-white">
-                <option value="1" selected>1 Persona</option>
-                <option value="2">2 Personas</option>
-                <option value="3">3 Personas</option>
-                <option value="4">4 Personas</option>
-                <option value="5">5 Personas</option>
+              <svg class="absolute left-0 top-1/2 -translate-y-1/2 z-10" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857z"/><path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/></svg>
+              <select id="año" class="pl-6 pr-4 absolute inset-0 w-full h-full appearance-none italic bg-white">
+                <option value="" selected disabled>Seleccionar año</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
               </select>
             </div>
           </div>
@@ -226,6 +259,32 @@
         </button>
       </div>
     </form>
+
+    <!-- EVENTS -->
+    <section class="wrapper my-16 md:my-20 lg:my-32">
+      <h2 class="title text-xl font-medium before:hidden md:text-xl">Próximos eventos</h2>
+      <div class="space-y-8 lg:space-y-10">
+        <article class="border border-solid border-[#dbdbdb] rounded-xl p-4 flex flex-wrap items-center justify-center md:justify-between md:relative md:p-6">
+          <figure class="basis-80 grow pb-8 aspect-video w-full max-w-[28.125rem] md:border-r md:border-solid md:border-[#d9d9d9] md:pb-0 md:pr-6 lg:pr-8">
+            <img class="rounded-lg aspect-video w-full h-full object-cover" src="./src/assets/img/image-seven.webp" alt="Evento 1">
+          </figure>
+          <div class="flex flex-col gap-4 border-t border-solid border-[#d9d9d9] md:grow md:basis-1/2 md:pl-6 md:border-t-0 lg:pl-8">
+            <p class="bg-primary text-white ml-auto max-w-max py-3 px-8 rounded-bl-lg text-lg font-bold md:absolute md:top-0 md:right-0">07 OCT</p>
+            <h3 class="text-tertiary font-semibold text-lg">Evento 1</h3>
+            <address class="not-italic text-secondary text-sm flex items-center gap-2 font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"></path><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path></svg>
+              Lugar
+            </address>
+            <p class="text-pretty text-tertiary text-sm md:text-base">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+          </div>
+        </article>
+      </div>
+      <div class="w-max ml-auto flex mt-12">
+        <button class="btn-pagination-events btn-pagination-events-active">1</button>
+        <button class="btn-pagination-events">2</button>
+        <button class="btn-pagination-events">3</button>
+      </div>
+    </section>
 
     <!-- PROMOTIONS -->
     <section class="wrapper my-16 md:my-20 lg:my-32">
@@ -319,216 +378,6 @@
           </div>
         </article>
       </div>
-    </section>
-
-    <!-- POPULARS -->
-    <section class="wrapper my-16 md:my-20 lg:my-32">
-      <h2 class="title">Destinos Populares</h2>
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(12.5rem,1fr))] gap-6">
-        <article class="relative p-8 py-12 rounded-xl overflow-hidden group">
-          <picture class="absolute inset-0 w-full h-full before:block before:absolute before:inset-0 before:bg-[#474747]/50 before:rounded-xl before:z-10">
-            <source srcset="./src/assets/img/image-three.avif" type="image/avif">
-            <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-[1.1]" src="./src/assets/img/image-three.webp" alt="" role="none" loading="lazy">
-          </picture>
-          <h3 class="relative z-10 text-white font-bold text-xl text-center">Cusco</h3>
-        </article>
-        <article class="relative p-8 py-12 rounded-xl overflow-hidden group">
-          <picture class="absolute inset-0 w-full h-full before:block before:absolute before:inset-0 before:bg-[#474747]/50 before:rounded-xl before:z-10">
-            <source srcset="./src/assets/img/image-four.avif" type="image/avif">
-            <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-[1.1]" src="./src/assets/img/image-four.webp" alt="" role="none" loading="lazy">
-          </picture>
-          <h3 class="relative z-10 text-white font-bold text-xl text-center">Amazonía</h3>
-        </article>
-        <article class="relative p-8 py-12 rounded-xl overflow-hidden group">
-          <picture class="absolute inset-0 w-full h-full before:block before:absolute before:inset-0 before:bg-[#474747]/50 before:rounded-xl before:z-10">
-            <source srcset="./src/assets/img/image-five.avif" type="image/avif">
-            <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-[1.1]" src="./src/assets/img/image-five.webp" alt="" role="none" loading="lazy">
-          </picture>
-          <h3 class="relative z-10 text-white font-bold text-xl text-center">Machu Picchu</h3>
-        </article>
-        <article class="relative p-8 py-12 rounded-xl overflow-hidden group">
-          <picture class="absolute inset-0 w-full h-full before:block before:absolute before:inset-0 before:bg-[#474747]/50 before:rounded-xl before:z-10">
-            <source srcset="./src/assets/img/image-six.avif" type="image/avif">
-            <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-[1.1]" src="./src/assets/img/image-six.webp" alt="" role="none" loading="lazy">
-          </picture>
-          <h3 class="relative z-10 text-white font-bold text-xl text-center">Uyuni</h3>
-        </article>
-        <article class="relative p-8 py-12 rounded-xl overflow-hidden group">
-          <picture class="absolute inset-0 w-full h-full before:block before:absolute before:inset-0 before:bg-[#474747]/50 before:rounded-xl before:z-10">
-            <source srcset="./src/assets/img/image-four.avif" type="image/avif">
-            <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-[1.1]" src="./src/assets/img/image-four.webp" alt="" role="none" loading="lazy">
-          </picture>
-          <h3 class="relative z-10 text-white font-bold text-xl text-center">Amazonía</h3>
-        </article>
-      </div>
-    </section>
-
-    <!-- DESTINATIONS -->
-    <section class="wrapper my-16 md:my-20 lg:my-32">
-      <div class="mb-12 lg:flex lg:items-center lg:gap-8 lg:mb-12 lg:justify-between">
-        <h2 class="title lg:mb-0">Nuestros Destinos</h2>
-        <div class="flex flex-col gap-4 mb-12 text-sm md:flex-row md:flex-wrap md:justify-center lg:mb-0 lg:flex-nowrap lg:text-nowrap">
-          <button class="btn-destinations-clicked flex-grow max-w-full transition-colors">Turismo Interno y Emisivo</button>
-          <button class="btn-destinations flex-grow max-w-full transition-colors">Turismo Receptivo</button>
-          <button class="btn-destinations flex-grow max-w-full transition-colors">Turismo Corporativo</button>
-        </div>
-      </div>
-      <div class="grid grid-cols-[repeat(auto-fill,minmax(18.75rem,1fr))] gap-6 md:gap-8">
-        <article class="border border-solid border-[#dbdbdb] rounded-xl p-3 bg-white group">
-          <div class="relative h-56 rounded-lg overflow-hidden">
-            <picture class="absolute inset-0 w-full h-full">
-              <source srcset="./src/assets/img/image-six.avif" type="image/avif">
-              <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-105" src="./src/assets/img/image-six.webp" alt="Salar de Uyuni" loading="lazy">
-            </picture>
-            <p class="btn-tertiary rounded-3xl flex items-center gap-2 text-white text-sm absolute top-3 left-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
-              País
-            </p>
-          </div>
-          <div class="w-4/5 mx-auto flex gap-6 items-center justify-center bg-primary rounded-br-lg rounded-bl-lg p-4 text-sm text-white">
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
-              4 días 
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/></svg>
-              3 noches
-            </p>
-          </div>
-          <h3 class="text-tertiary font-semibold text-lg mt-4 mb-3">Salar de Uyuni</h3>
-          <p class="text-primary font-semibold mb-4">$ 120.00</p>
-          <a class="btn-primary text-sm max-w-full transition-all hover:shadow-lg hover:saturate-200" href="">Arma tu viaje</a>
-        </article>
-        <article class="border border-solid border-[#dbdbdb] rounded-xl p-3 bg-white group">
-          <div class="relative h-56 rounded-lg overflow-hidden">
-            <picture class="absolute inset-0 w-full h-full">
-              <source srcset="./src/assets/img/image-six.avif" type="image/avif">
-              <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-105" src="./src/assets/img/image-six.webp" alt="Salar de Uyuni" loading="lazy">
-            </picture>
-            <p class="btn-tertiary rounded-3xl flex items-center gap-2 text-white text-sm absolute top-3 left-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
-              País
-            </p>
-          </div>
-          <div class="w-4/5 mx-auto flex gap-6 items-center justify-center bg-primary rounded-br-lg rounded-bl-lg p-4 text-sm text-white">
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
-              4 días 
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/></svg>
-              3 noches
-            </p>
-          </div>
-          <h3 class="text-tertiary font-semibold text-lg mt-4 mb-3">Salar de Uyuni</h3>
-          <p class="text-primary font-semibold mb-4">$ 120.00</p>
-          <a class="btn-primary text-sm max-w-full transition-all hover:shadow-lg hover:saturate-200" href="">Arma tu viaje</a>
-        </article>
-        <article class="border border-solid border-[#dbdbdb] rounded-xl p-3 bg-white group">
-          <div class="relative h-56 rounded-lg overflow-hidden">
-            <picture class="absolute inset-0 w-full h-full">
-              <source srcset="./src/assets/img/image-six.avif" type="image/avif">
-              <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-105" src="./src/assets/img/image-six.webp" alt="Salar de Uyuni" loading="lazy">
-            </picture>
-            <p class="btn-tertiary rounded-3xl flex items-center gap-2 text-white text-sm absolute top-3 left-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
-              País
-            </p>
-          </div>
-          <div class="w-4/5 mx-auto flex gap-6 items-center justify-center bg-primary rounded-br-lg rounded-bl-lg p-4 text-sm text-white">
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
-              4 días 
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/></svg>
-              3 noches
-            </p>
-          </div>
-          <h3 class="text-tertiary font-semibold text-lg mt-4 mb-3">Salar de Uyuni</h3>
-          <p class="text-primary font-semibold mb-4">$ 120.00</p>
-          <a class="btn-primary text-sm max-w-full transition-all hover:shadow-lg hover:saturate-200" href="">Arma tu viaje</a>
-        </article>
-        <article class="border border-solid border-[#dbdbdb] rounded-xl p-3 bg-white group">
-          <div class="relative h-56 rounded-lg overflow-hidden">
-            <picture class="absolute inset-0 w-full h-full">
-              <source srcset="./src/assets/img/image-six.avif" type="image/avif">
-              <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-105" src="./src/assets/img/image-six.webp" alt="Salar de Uyuni" loading="lazy">
-            </picture>
-            <p class="btn-tertiary rounded-3xl flex items-center gap-2 text-white text-sm absolute top-3 left-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
-              País
-            </p>
-          </div>
-          <div class="w-4/5 mx-auto flex gap-6 items-center justify-center bg-primary rounded-br-lg rounded-bl-lg p-4 text-sm text-white">
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
-              4 días 
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/></svg>
-              3 noches
-            </p>
-          </div>
-          <h3 class="text-tertiary font-semibold text-lg mt-4 mb-3">Salar de Uyuni</h3>
-          <p class="text-primary font-semibold mb-4">$ 120.00</p>
-          <a class="btn-primary text-sm max-w-full transition-all hover:shadow-lg hover:saturate-200" href="">Arma tu viaje</a>
-        </article>
-        <article class="border border-solid border-[#dbdbdb] rounded-xl p-3 bg-white group">
-          <div class="relative h-56 rounded-lg overflow-hidden">
-            <picture class="absolute inset-0 w-full h-full">
-              <source srcset="./src/assets/img/image-six.avif" type="image/avif">
-              <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-105" src="./src/assets/img/image-six.webp" alt="Salar de Uyuni" loading="lazy">
-            </picture>
-            <p class="btn-tertiary rounded-3xl flex items-center gap-2 text-white text-sm absolute top-3 left-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
-              País
-            </p>
-          </div>
-          <div class="w-4/5 mx-auto flex gap-6 items-center justify-center bg-primary rounded-br-lg rounded-bl-lg p-4 text-sm text-white">
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
-              4 días 
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/></svg>
-              3 noches
-            </p>
-          </div>
-          <h3 class="text-tertiary font-semibold text-lg mt-4 mb-3">Salar de Uyuni</h3>
-          <p class="text-primary font-semibold mb-4">$ 120.00</p>
-          <a class="btn-primary text-sm max-w-full transition-all hover:shadow-lg hover:saturate-200" href="">Arma tu viaje</a>
-        </article>
-        <article class="border border-solid border-[#dbdbdb] rounded-xl p-3 bg-white group">
-          <div class="relative h-56 rounded-lg overflow-hidden">
-            <picture class="absolute inset-0 w-full h-full">
-              <source srcset="./src/assets/img/image-six.avif" type="image/avif">
-              <img class="w-full h-full object-cover select-none pointer-events-none transition-transform duration-300 group-hover:scale-105" src="./src/assets/img/image-six.webp" alt="Salar de Uyuni" loading="lazy">
-            </picture>
-            <p class="btn-tertiary rounded-3xl flex items-center gap-2 text-white text-sm absolute top-3 left-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
-              País
-            </p>
-          </div>
-          <div class="w-4/5 mx-auto flex gap-6 items-center justify-center bg-primary rounded-br-lg rounded-bl-lg p-4 text-sm text-white">
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/></svg>
-              4 días 
-            </p>
-            <p class="flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/></svg>
-              3 noches
-            </p>
-          </div>
-          <h3 class="text-tertiary font-semibold text-lg mt-4 mb-3">Salar de Uyuni</h3>
-          <p class="text-primary font-semibold mb-4">$ 120.00</p>
-          <a class="btn-primary text-sm max-w-full transition-all hover:shadow-lg hover:saturate-200" href="">Arma tu viaje</a>
-        </article>
-      </div>
-      <a class="btn-primary flex items-center gap-2 px-12 mx-auto mt-12 transition-all hover:saturate-200 hover:shadow-lg" href="">
-        Ver más
-        <svg class="w-[1.125rem] h-[1.125rem]" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/></svg>
-      </a>
     </section>
 
     <!-- ATTENTION TO CLIENTS AND STEPS TO BUY -->

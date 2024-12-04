@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil de usuario</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body class="bg-[#f2f2f2]">
+  <main>
+    <header class="bg-white py-6 mb-6 px-4 md:px-8 xl:wrapper">
+      <!-- INFO USER -->
+      <div class="flex justify-between flex-wrap gap-8 items-center mb-8">
+        <div class="flex gap-6 flex-wrap">
+          <div class="size-24 aspect-square rounded-full overflow-hidden">
+            <img class="size-full aspect-square object-cover object-center" src="./src/assets/img/image-ten.webp" alt="Bryan De la Cruz">
+          </div>
+          <div class="flex flex-col justify-center">
+            <h1 class="font-semibold text-lg">Bryan De la Cruz</h1>
+            <p class="text-xs">@bryandelacruz</p>
+            <div class="inline-flex rounded-md shadow-sm mt-auto sm:hidden">
+              <a href="#" class="px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary text-tertiary hover:text-gray-900">
+                Editar perfil
+              </a>
+              <a href="#" class="px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary text-tertiary hover:text-gray-900">
+                <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-md shadow-sm ml-auto hidden sm:inline-flex">
+          <a href="#" class="px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-s-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary text-tertiary hover:text-gray-900">
+            Editar perfil
+          </a>
+          <a href="#" class="px-4 py-2 text-sm font-medium bg-white border border-gray-200 rounded-e-lg hover:bg-gray-100 focus:z-10 focus:ring-2 focus:ring-primary focus:text-primary text-tertiary hover:text-gray-900">
+            <svg  xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"  stroke-width="2"  stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /></svg>
+          </a>
+        </div>
+      </div>
+  
+      <!-- MENU TABS -->
+      <nav class="text-sm font-medium text-center text-tertiary border-b border-gray-200 overflow-hidden">
+        <ul class="flex -mb-px overflow-auto text-nowrap whitespace-nowrap [scrollbar-width:none]">
+          <li class="me-2">
+            <button class="tab-user active inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-900 hover:border-gray-500">Actualización de actividades</button>
+          </li>
+          <li class="me-2">
+            <button class="tab-user inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-900 hover:border-gray-500">Viajes</button>
+          </li>
+          <li class="me-2">
+            <button class="tab-user inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-900 hover:border-gray-500">Fotos</button>
+          </li>
+          <li class="me-2">
+            <button class="tab-user inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-900 hover:border-gray-500">Opiniones</button>
+          </li>
+          <li class="me-2">
+            <button class="tab-user inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-900 hover:border-gray-500">Foros</button>
+          </li>
+          <li class="me-2">
+            <button class="tab-user inline-block p-4 border-b-2 border-transparent rounded-t-lg hover:text-gray-900 hover:border-gray-500">Mapas de viajes</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- INFORMATION -->
+    <section class="flex flex-col gap-6 pb-6 md:flex-row md:items-start xl:wrapper">
+      <!-- ASIDE LOGROS -->
+      <aside class="bg-white py-6 px-4 md:px-6 md:w-2/5 lg:px-8 lg:w-2/6">
+        <div class="text-sm flex flex-col gap-4">
+          <h2 class="font-semibold text-lg">Tus logros</h2>
+          <p class="text-tertiary">Comienza a compartir para acceder a tus logros.</p>
+          <div class="border border-solid border-tertiary p-4 rounded-lg flex flex-wrap gap-4 items-center">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-lock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z" /><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M8 11v-4a4 4 0 1 1 8 0v4" /></svg>
+            <div>
+              <p class="font-medium">Escribe tu primera opinión</p>
+              <p class="text-tertiary">Accede a los niveles de opiniones</p>
+            </div>
+          </div>
+          <div class="border border-solid border-tertiary p-4 rounded-lg flex flex-wrap gap-4 items-center">
+            <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-lock"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z" /><path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0" /><path d="M8 11v-4a4 4 0 1 1 8 0v4" /></svg>
+            <div>
+              <p class="font-medium">Carga tu primera foto</p>
+              <p class="text-tertiary">Accede a los niveles de fotos</p>
+            </div>
+          </div>
+          <button class="btn-primary w-full max-w-full rounded-full transition-all duration-300 hover:shadow-lg hover:saturate-200">Ver todo</button>
+        </div>
+      </aside>
+
+      <!-- MAIN SECTION -->
+      <section class="text-sm bg-white py-6 px-4 md:px-6 md:w-3/5 lg:px-8 lg:w-4/6">
+        <div class="flex flex-col gap-6">
+          <div class="text-center">
+            <p class="font-semibold text-lg mb-2">¡Oops! Parece que no hay publicaciones todavía</p>
+            <p class="text-tertiary">Agrega fotos e información a tu perfil para que los usuarios puedan encontrarte fácilmente y conocerte más.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+</body>
+</html>

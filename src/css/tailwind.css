@@ -144,4 +144,8 @@
   .btn-pagination-events-active {
     @apply bg-[#efe8e0];
   }
+
+  .tab-user.active {
+    @apply text-primary border-b-2 border-primary hover:text-primary hover:border-primary;
+  }
 }

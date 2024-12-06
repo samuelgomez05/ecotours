@@ -12,6 +12,7 @@
   <link rel="preload" href="./src/assets/font/CaviarDreams-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="./src/assets/img/background-one.avif" as="image" type="image/avif">
   <script src="./src/js/modal-whatsapp.js" defer></script>
+  <script src="./src/js/modal.js" defer></script>
   <meta name="description" content="Somos una agencia de viajes con los mejores destinos a tu alcance. Descubre nuestros paquetes, promociones y más. ¡No te pierdas la oportunidad de disfrutar de nuestros destinos turísticos!">
   <meta name="keywords" content="ecotours, turismo, viajes, ecoturismo, aventuras, agencia de viajes, paquetes de viajes, comprar viajes, comprar paquetes, destinos turisticos, paquetes, descubrir lugares turisticos, operadora de turismo, viajes turisticos">
   <meta name="robots" content="index, follow">
@@ -789,19 +790,5 @@
       </button>
     </form>
   </dialog>
-
-  <script>
-    const modal = document.getElementById('modal-arma-tu-viaje');
-    const closeModal = document.getElementById('close-modal');
-    const openModal = document.getElementById('open-modal');
-
-    openModal.addEventListener('click', () => {
-      modal.showModal();
-    });
-
-    closeModal.addEventListener('click', () => {
-      modal.close();
-    });
-  </script>
 </body>
 </html>

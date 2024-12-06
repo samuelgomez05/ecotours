@@ -148,4 +148,33 @@
   .tab-user.active {
     @apply text-primary border-b-2 border-primary hover:text-primary hover:border-primary;
   }
+
+  #modal-arma-tu-viaje {
+    opacity: 0;
+    transition: overlay .3s ease-out, display .3s ease-out, opacity .3s ease-out;
+    transition-behavior: allow-discrete; /* Para animar el display del dialog y demas, al cerrar */
+
+    &::backdrop {
+      opacity: 0;
+      transition: opacity .3s ease-out;
+    }
+
+    /* Cuando el dialog este abierto, restablecemos los estilos */
+    &[open] {
+      opacity: 1;
+  
+      &::backdrop {
+        opacity: 1;
+      }
+  
+      /* Estilos iniciales que se aplicaran cuando abramos el dialog, y tenga esa transicion */
+      @starting-style {
+        opacity: 0;
+  
+        &::backdrop {
+          opacity: 0;
+        }
+      }
+    }
+  }
 }

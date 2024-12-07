@@ -149,7 +149,8 @@
     @apply text-primary border-b-2 border-primary hover:text-primary hover:border-primary;
   }
 
-  #modal-arma-tu-viaje {
+  #modal-arma-tu-viaje,
+  .modal {
     opacity: 0;
     transition: overlay .3s ease-out, display .3s ease-out, opacity .3s ease-out;
     transition-behavior: allow-discrete; /* Para animar el display del dialog y demas, al cerrar */
